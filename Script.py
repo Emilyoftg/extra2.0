@@ -12,7 +12,8 @@ Here Is The Help For My Commands.</b>"""
 <b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
 <b>➥ Server</b> : <code>AWS</code>
 <b>➥ Build Stats</b> : <code>V6.0 [BETA]</code>
-©️MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href=https://t.me/MOVIECLUB_CHAT>Mᴏᴠɪᴇ Cʟᴜʙ</a>"""
+
+©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href=https://t.me/MovieClubOfficiall>Mᴏᴠɪᴇ Cʟᴜʙ</a>"""
     SOURCE_TXT = """
 <code>All the files in this bot are freely available on the internet or posted by somebody else.This bot is indexing files which are already uploaded on Telegram for easy of searching, We respect all the copyright laws and works in compliance with DMCA and EUCD. If anything is against law please contact us so that it can be removed asap.</code>"""
     FILE_TXT = """Help: <b>File Store</b>
