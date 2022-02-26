@@ -339,7 +339,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode="md"
             )
-        return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+        return
     elif query.data == "backcb":
         await query.answer()
 
@@ -350,7 +350,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+            return
         buttons = []
         for groupid in groupids:
             try:
@@ -386,7 +386,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('No such file exist.')
+            return await query.answer('𝖭𝗈𝗍𝗁𝗂𝗇𝗀 𝖥𝗂𝗅𝖾 𝖥𝗈𝗎𝗇𝖽.')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -689,15 +689,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/MC_MovieBot?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MWUpdatez'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/OpusTechz')
-            ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('Updates', url='https://t.me/MCMovieBot')
             ],[
-            InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA')
+            InlineKeyboardButton('Help', callback_data='help'),
+            InlineKeyboardButton('About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -731,34 +729,34 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="𝙾"
+            text="𝖬"
         )
         await query.message.edit_text(
-            text="𝙾𝙿"
+            text="𝖬𝗈"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄"
+            text="𝖬𝗈𝗏"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂"
+            text="𝖬𝗈𝗏𝗂"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-"
+            text="𝖬𝗈𝗏𝗂𝖾"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅𝗎"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗎𝖻"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅𝗎𝖻 𝖮𝖿𝖿𝗂𝖼𝗂𝖺𝗅"
         )
         await query.message.edit_text(        
             text="Select your required mode from below!",
@@ -767,76 +765,74 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
-            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct')
+            InlineKeyboardButton('𝖬𝖺𝗇𝗎𝖺𝗅 𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝖠𝗎𝗍𝗈 𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='autofilter'),
+            InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇𝗌', callback_data='coct')
             ],[
-            InlineKeyboardButton('𝚂𝙾𝙽𝙶', callback_data='songs'),
-            InlineKeyboardButton('𝙴𝚇𝚃𝚁𝙰', callback_data='extra'),
-            InlineKeyboardButton("𝚅𝙸𝙳𝙴𝙾", callback_data='video')
+            InlineKeyboardButton('𝖬𝗎𝗌𝗂𝖼', callback_data='songs'),
+            InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺', callback_data='extra'),
+            InlineKeyboardButton("𝖵𝖾𝖽𝗂𝗈", callback_data='video')
             ],[
-            InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin'), 
-            InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
-            InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image')
+            InlineKeyboardButton('𝖯𝗂𝗇', callback_data='pin'), 
+            InlineKeyboardButton('𝖯𝖺𝗌𝗍𝖾', callback_data='pastes'),
+            InlineKeyboardButton("𝖨𝗆𝖺𝗀𝖾", callback_data='image')
             ],[
-            InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
-            InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
-            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss')
+            InlineKeyboardButton('𝖥𝗎𝗇', callback_data='fun'), 
+            InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='son'),
+            InlineKeyboardButton('𝖳𝖳𝖲', callback_data='ttss')
             ],[
-            InlineKeyboardButton('𝙿𝚄𝚁𝙶𝙴', callback_data='purges'),
-            InlineKeyboardButton('𝙿𝙸𝙽𝙶', callback_data='pings'),
-            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷', callback_data='tele')
+            InlineKeyboardButton('𝖯𝗎𝗋𝗀𝖾', callback_data='purges'),
+            InlineKeyboardButton('𝖯𝗂𝗇𝗀', callback_data='pings'),
+            InlineKeyboardButton('𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗉𝗁', callback_data='tele')
             ],[
-            InlineKeyboardButton('𝚆𝙷𝙾𝙸𝚂', callback_data='whois'),
-            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
-            InlineKeyboardButton('𝙺𝙸𝙲𝙺', callback_data='zombies')
+            InlineKeyboardButton('𝖶𝗁𝗈𝖨𝖲', callback_data='whois'),
+            InlineKeyboardButton('𝖬𝗎𝗍𝖾', callback_data='restric'),
+            InlineKeyboardButton('𝖹𝗈𝗆𝖻𝗂𝖾𝗌', callback_data='zombies')
             ],[
-            InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
-            InlineKeyboardButton('𝚈𝚃-𝚃𝙷𝚄𝙼𝙱', callback_data='ytthumb'),
-            InlineKeyboardButton('𝚂𝚃𝙸𝙲𝙺𝙴𝚁-𝙸𝙳', callback_data='sticker')
+            InlineKeyboardButton('𝖱𝖾𝗉𝗈𝗋𝗍', callback_data='report'),
+            InlineKeyboardButton('𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅', callback_data='ytthumb'),
+            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋𝗌', callback_data='sticker')
             ],[
-            InlineKeyboardButton('𝙲𝙾𝚅𝙸𝙳', callback_data='corona'),
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
-            InlineKeyboardButton('𝚄𝚁𝙻-𝚂𝙷𝙾𝚁𝚃', callback_data='urlshort')
+            InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='corona'),
+            InlineKeyboardButton('𝖠𝗎𝖽𝗂𝗈-𝖡𝗈𝗈𝗄', callback_data='abook'),
+            InlineKeyboardButton('𝖴𝗋𝗅 𝖲𝗁𝗈𝗋𝗍𝗇𝖾𝗋', callback_data='urlshort')
             ],[
-            InlineKeyboardButton('𝙶-𝚃𝚁𝙰𝙽𝚂', callback_data='gtrans'),
-            InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
-            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
+            InlineKeyboardButton('𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾', callback_data='gtrans'),
+            InlineKeyboardButton('𝖥𝗂𝗅𝖾 𝖲𝗍𝗈𝗋𝖾', callback_data='newdata'),
+            InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats')
             ],[
-            InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?', callback_data='deploy')
-            ],[
-            InlineKeyboardButton('⚚ 𝙱𝙰𝙲𝙺 ⚚', callback_data='start')
+            InlineKeyboardButton('🔙 𝖯𝗋𝖾𝗏𝗂𝗈𝗎𝗌 𝖬𝖾𝗇𝗎 🔙', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="𝙾"
+            text="𝖬"
         )
         await query.message.edit_text(
-            text="𝙾𝙿"
+            text="𝖬𝗈"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄"
+            text="𝖬𝗈𝗏"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂"
+            text="𝖬𝗈𝗏𝗂"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-"
+            text="𝖬𝗈𝗏𝗂𝖾"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅𝗎"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗎𝖻"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅𝗎𝖻 𝖮𝖿𝖿𝗂𝖼𝗂𝖺𝗅"
         )
         await query.message.edit_text(          
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -845,44 +841,56 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://github.com/Aadhi000/Ajax')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/MCMovieBot'),
+            InlineKeyboardButton('🗒️ Disclaimer', callback_data='source')
             ],[
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+            InlineKeyboardButton('⏪️ Back', callback_data='start'),
+            InlineKeyboardButton('Close 🔒', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="𝙾"
+            text="𝖬"
         )
         await query.message.edit_text(
-            text="𝙾𝙿"
+            text="𝖬𝗈"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄"
+            text="𝖬𝗈𝗏"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂"
+            text="𝖬𝗈𝗏𝗂"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-"
+            text="𝖬𝗈𝗏𝗂𝖾"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅𝗎"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗎𝖻"
         )
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅𝗎𝖻 𝖮𝖿𝖿𝗂𝖼𝗂𝖺𝗅"
         )
         await query.message.edit_text(
             text=script.ABOUT_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "source":
+        buttons = [[
+            InlineKeyboardButton('⏪️ Back', callback_data='about')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SOURCE_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
