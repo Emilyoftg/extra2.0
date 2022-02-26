@@ -1382,7 +1382,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"<b>🎬 Title : {search}\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Thriller\n👤 Requested By: {message.from_user.mention}\n\n© By {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -1393,9 +1393,9 @@ async def auto_filter(client, msg, spoll=False):
             await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
-            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_photo(photo="https://telegra.ph/file/c5f1489cc706063baf6d4.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        await message.reply_photo(photo="https://telegra.ph/file/14af383f7c4aa2915c8c5.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
 
