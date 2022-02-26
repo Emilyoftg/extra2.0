@@ -40,25 +40,12 @@ t𝗋𝗒 𝗍𝗁𝗂𝗌 𝖮𝗎𝗍:
 3. /Runs - Jokes 
 4. /Goal or /Shoot - To Make A Goal Or Shoot
 5. /luck or /cownd - Spin the Lucky"""
-    DEPLOY_TXT = """<b>𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?</b> 
-  
-<b>✮ Source Code 1 ›› 
-https://github.com/Aadhi000/Ajax</b>
-
-<b>✮ Source Code 2 ›› 
-https://github.com/Aadhi000/Ajax-Extra-Features</b>
-
-<b>✮ Deploy Tutorial ››</b> <i><b>https://youtu.be/kB9TkCs8cX0</b></i>
-
-<b>Share and Subscribe</b>
-
-Credits ›› <a href=https://t.me/MWUpdatez><b>𝙼𝚆-𝚄𝙿𝙳𝙰𝚃𝙴𝚉</b></a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and ᗩᒍᗩ᙭  will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. ᗩᒍᗩ᙭ should have admin privillage.
+1. 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺 should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -108,7 +95,7 @@ Translate text to speech
 
 <b>NOTE:</b>
 
-• IMDb should have admin privillage.
+• 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺 should have admin privillage.
 • These commands works on both pm and group.
 • IMDb can translate texts to 200+ languages."""
     PINGS_TXT ="""<b>🌟 Ping:</b>
@@ -119,8 +106,7 @@ Helps you to know your ping 🚶🏼‍♂️
 
 • /alive - To check you are alive.
 • /help - To get help 
-• /ping - To get your ping 
-• /repo - Source Code. 
+• /ping - To get your ping  
 
 <b>🏹Usage🏹 :</b>
 
@@ -133,7 +119,7 @@ Do as you wish with telegra.ph module!
 
 </b>USAGE:</b>
 
-🤧 /telegraph - Send me Picture or Vide Under (5MB)
+ /telegraph - Send me Picture or Vide Under (5MB)
 
 <b>NOTE:</b>
 
@@ -152,7 +138,7 @@ Group Support
 <b>Note:</b>
 
 Everyone can use this command , if spaming happens bot will automatically ban you from the group."""
-    PURGE_TXT = """<b>💣Purge💣</b>
+    PURGE_TXT = """<b>Purge</b>
     
 Delete A Lot Of Messages From Groups! 
     
