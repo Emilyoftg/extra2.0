@@ -169,7 +169,8 @@ Delete A Lot Of Messages From Groups!
 URL buttons:
 <code>[Button Text](buttonurl:https://t.me/MOVIECLUB_CHAT)</code>
 Alert buttons:
-<code>[Button Text](buttonalert:This is an alert message)</code></b>""
+<code>[Button Text](buttonalert:This is an alert message)</code></b>"""
+   
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
 <b>NOTE:</b>
