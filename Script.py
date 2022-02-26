@@ -1,4 +1,4 @@
-class Script(object):
+class script(object):
     START_TXT = """<b>Hello {},
 I A Telegram Auto Filter Bot.Its Easy To Use Me ):\nJust Add Me To Your Group As Admin,Hit The Help Button For More Info</b>"""
     HELP_TXT = """<b>Hey {}
