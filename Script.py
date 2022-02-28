@@ -16,11 +16,11 @@ Here Is The Help For My Commands.</b>"""
 ©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href=https://t.me/MovieClubOfficiall>Mᴏᴠɪᴇ Cʟᴜʙ</a>"""
     SOURCE_TXT = """
 <code>All the files in this bot are freely available on the internet or posted by somebody else.This bot is indexing files which are already uploaded on Telegram for easy of searching, We respect all the copyright laws and works in compliance with DMCA and EUCD. If anything is against law please contact us so that it can be removed asap.</code>"""
-    FILE_TXT = """Help: <b>File Store</b>
+    FILE_TXT = """Help: <b><u>File Store</u></b>
 
-<b>By Using This Module You can store files in My database and I will You A Permanent link To access The saved Files.If You want to add files from a Public channel send the file link only or You want to store files from a Private channel you must make me admin on their to access files files (only media messages  can be stored).</b>
+<b>By Using This Module You can store files in My database and I will You A Permanent link To access The saved Files.If You want to add files from a Public channel send the file link only or You want to store files from a Private channel you must make me admin on their to access files files (only media messages  can be stored).
 
-⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾
+⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 
 • /plink - <b>𝖱𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺𝗇𝗒 𝗆𝖾𝖽𝗂𝖺 𝗍𝗈 𝗀𝖾𝗍 𝗅𝗂𝗇𝗄.</b>
 • /pbatch - <b>𝖴𝗌𝖾 𝗒𝗈𝗎𝗋 𝗆e𝖽𝗂𝖺 𝗅𝗂𝗇𝗄 𝗐𝗂𝗍𝗁 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽.</b>
@@ -29,101 +29,103 @@ Here Is The Help For My Commands.</b>"""
 ❗️𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 
 <code>/batch https://t.me/MovieClubOfficiall/7 https://t.me/MovieClubOfficiall/10</code>"""
-    WHOIS_TXT ="""<b>WHOIS MODULE</b>
-Note:- Give a user details
-•/whois :-give a user full details"""
-    FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
+    WHOIS_TXT ="""Help: <b><u>WHO IS</u></b>
+
+<b>By Using This Module You Can Get A User Details
+
+⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
+
+•/whois : Get a users full details"""
+    FUN_TXT ="""Help: <b><u>Fun</u></b> 
     
-<b>🎲 NOTHING MUCH JUST SOME FUN THINGS</b>
+<b>🎲 NOTHING MUCH JUST SOME FUN THINGS
+
+⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
+
 t𝗋𝗒 𝗍𝗁𝗂𝗌 𝖮𝗎𝗍: 
 𝟣. /dice - Roll The Dice 
 𝟤. /Throw 𝗈𝗋 /Dart - 𝖳𝗈 𝖬𝖺𝗄𝖾 Drat 
 3. /Runs - Jokes 
 4. /Goal or /Shoot - To Make A Goal Or Shoot
 5. /luck or /cownd - Spin the Lucky"""
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
+    MANUELFILTER_TXT = """Help: <b><u>Manual Filters</u></b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and ᗩᒍᗩ᙭  will respond whenever a keyword is found the message
+<b>Filter is the feature were users can set automated replies for a particular keyword and 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺  will respond whenever a keyword is found the message</b>
 
 <b>NOTE:</b>
 1. 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺 should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
-<b>Commands and Usage:</b>
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 • /filter - <code>add a filter in chat</code>
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    SONG_TXT = """<b>🎼Song Download🎼</b>
-Song Download Module, For Those Who Love Music
+    SONG_TXT = """Help: <b><u>Song Download</u></b>
 
-<b>🎈 Command 🎈</b>
+<b>By Using This Module You Can Download Your Favorite Tunes, For Those Who Love Music.</b>
 
-- /song [Song Name] - To Download Music 😁
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 
-<b>🌀Usage🌀</b>
-- Can Be Used By Everyone
-- Works in bot pm"""
-    PIN_TXT ="""<b>PIN MODULE</b>
-<b>Pin :</b>
+• /song [Correct Song Name] - To Download Music From YouTube
 
-<b>All The Pin Related Commands Can Be Found Here; Keep Your Chat Up To Date On The Latest News With A Simple Pinned Message!</b>
+<b>Note</b>
+• Can Be Used By Everyone
+• Works in bot pm Also"""
+    PIN_TXT ="""Help: <b><u>PIN</u></b>
 
-<b>📚 Commands & Usage:</b>
+<b>By Using This Module Keep Your Chat Up To Date On The Latest News With A Simple Pinned Message!</b>
+
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 
 ◉ /pin :- Pin The Message You Replied To Message To Send A Notification To Group Members
 ◉ /unpin :- Unpin The Current Pinned Message. If Used As A Reply, Unpins The Replied To Message"""
-    PASTE_TXT = """Help: <b>Paste</b>
+    PASTE_TXT = """Help: <b><u>Paste</u></b>
 
-Paste some texts or documents on a website!
+<b>By Using This Module, You can Paste some texts or documents on a website!</b>
 
-<b>Commands and Usage:</b>
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 
 • /paste [text] - paste the given text on Pasty
 
 <b>NOTE:</b>
-
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
-    TTS_TXT = """Help: <b> TTS 🎤 module:</b>
+    TTS_TXT = """Help: <b><u>Text To Speech</u></b>
 
-Translate text to speech
+<u>By Using This Module, You CanTranslate text to speech</b>
 
-<b>Commands and Usage:</b>
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 
-• /tts <text> : convert text to speech
+• /tts <text> : Convert Your text to speech
 
 <b>NOTE:</b>
-
 • 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺 should have admin privillage.
 • These commands works on both pm and group.
 • IMDb can translate texts to 200+ languages."""
-    PINGS_TXT ="""<b>🌟 Ping:</b>
+    PINGS_TXT ="""Help: <b><u>Alive or Not</u></b>
 
-Helps you to know your ping 🚶🏼‍♂️
+<b>By Using This Module Helps you to know your ping & Wether I am alive or not</b>
 
-<b>Commands:</b>
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 
 • /alive - To check you are alive.
 • /help - To get help 
 • /ping - To get your ping  
 
-<b>🏹Usage🏹 :</b>
-
+<b>Note</b>
 • This commands can be used in pms and groups
-• This commands can be used buy everyone in the groups and bots pm
-• Share us for more features"""
-    TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
+• This commands can be used buy everyone in the groups and bots pm"""
+    TELE_TXT = """HELP: <b><u>Telegraph</u></b>
 
-Do as you wish with telegra.ph module!
+<b> By Using This Module You can convert gif, image or video into telegra.ph links</b>
 
-</b>USAGE:</b>
+</b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 
- /telegraph - Send me Picture or Vide Under (5MB)
+• /telegraph - Send me Picture or Video Under (5MB)
 
 <b>NOTE:</b>
-
 • This Command Is Available in goups and pms
 • This Command Can be used by everyone"""
     JSON_TXT ="""<b>JSON:</b>
