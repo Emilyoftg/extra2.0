@@ -22,7 +22,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('𝗢𝗪𝗡𝗘𝗥', url=f'https://t.me/{SUPPORT_CHAT}')
+                InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -38,15 +38,15 @@ async def save_group(bot, message):
             return
         buttons = [
             [
-                InlineKeyboardButton('⚡ HΞLᎮ ⚡', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help")
             ],
             [
-                InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/MWUpdatez')
+                InlineKeyboardButton('Updates Channel', url='https://t.me/MCMovieBot')
             ]
             ]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title}.⚡\n\nIf you have any questions & doubts about using me contact OWNER.</b>",
+            text=f"<b>Thankyou For Adding Me In {message.chat.title}.\n\nIf you have any questions & doubts about using me contact OWNER.</b>",
             reply_markup=reply_markup)
     else:
         for u in message.new_chat_members:
@@ -55,7 +55,7 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey ♥️ {u.mention}, Welcome to {message.chat.title}🙂</b>")
+            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey {u.mention}, Welcome to {message.chat.title}</b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
@@ -69,7 +69,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('𝗢𝗪𝗡𝗘𝗥', url=f'https://t.me/{SUPPORT_CHAT}')
+            InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
